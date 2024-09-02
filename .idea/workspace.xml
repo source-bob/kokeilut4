@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c077ccc-4ecb-4dd9-9003-0f65f43d9b3f" name="Changes" comment="moi">
-      <change afterPath="$PROJECT_DIR$/mod8/t8.2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mod8/t8.3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mod13/tx.py" beforeDir="false" afterPath="$PROJECT_DIR$/mod13/tx.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mod8/t8.1.py" beforeDir="false" afterPath="$PROJECT_DIR$/mod8/t8.1.py" afterDir="false" />
-    </list>
+    <list default="true" id="1c077ccc-4ecb-4dd9-9003-0f65f43d9b3f" name="Changes" comment="moi" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,6 +55,7 @@
     "Python.t12.1.executor": "Run",
     "Python.t12.2.executor": "Run",
     "Python.t13.1.executor": "Run",
+    "Python.t13.2.executor": "Run",
     "Python.t2.2.executor": "Run",
     "Python.t2.3.executor": "Run",
     "Python.t2.4.executor": "Run",
@@ -144,7 +139,7 @@
       <workItem from="1724869609594" duration="5759000" />
       <workItem from="1725221314001" duration="366000" />
       <workItem from="1725226176899" duration="3508000" />
-      <workItem from="1725262230368" duration="3698000" />
+      <workItem from="1725262230368" duration="4033000" />
     </task>
     <task id="LOCAL-00001" summary="moi">
       <option name="closed" value="true" />
@@ -202,7 +197,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725221613632</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="moi">
+      <option name="closed" value="true" />
+      <created>1725276409401</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1725276409401</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,6 +251,7 @@
     <SUITE FILE_PATH="coverage/kokeilut4$t11_1.coverage" NAME="t11.1 Coverage Results" MODIFIED="1724615985129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kokeilut4$t8_2.coverage" NAME="t8.2 Coverage Results" MODIFIED="1725271465239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mod8" />
     <SUITE FILE_PATH="coverage/kokeilut4$t2_3.coverage" NAME="t2.3 Coverage Results" MODIFIED="1723996377633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/kokeilut4$t13_2.coverage" NAME="t13.2 Coverage Results" MODIFIED="1725276283518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mod13" />
     <SUITE FILE_PATH="coverage/kokeilut4$t3_1.coverage" NAME="t3.1 Coverage Results" MODIFIED="1723998924434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kokeilut4$t3_4.coverage" NAME="t3.4 Coverage Results" MODIFIED="1724048414093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kokeilut4$t4_2.coverage" NAME="t4.2 Coverage Results" MODIFIED="1724068965034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
