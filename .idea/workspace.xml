@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c077ccc-4ecb-4dd9-9003-0f65f43d9b3f" name="Changes" comment="moi">
-      <change afterPath="$PROJECT_DIR$/t4.6.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mod8/t8.2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mod8/t8.3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tx.py" beforeDir="false" afterPath="$PROJECT_DIR$/tx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mod13/tx.py" beforeDir="false" afterPath="$PROJECT_DIR$/mod13/tx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mod8/t8.1.py" beforeDir="false" afterPath="$PROJECT_DIR$/mod8/t8.1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,63 +49,74 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.hello.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t10.1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t10.2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t10.3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t10.4.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t11.1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t11.2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t12.1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t12.2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t13.1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t2.2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t2.3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t2.4.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t2.5.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t2.6.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t3.1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t3.2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t3.3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t3.4.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t4.1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t4.2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t4.3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t4.4.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t4.5.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t4.6.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t5.1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t5.2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t5.3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t5.4.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t6.1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t6.2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t6.3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t6.4.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t6.5.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t6.6.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t7.1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t7.2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t7.3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t8.1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t9.1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t9.2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t9.3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t9.4.executor&quot;: &quot;Run&quot;,
-    &quot;Python.tx.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.hello.executor": "Run",
+    "Python.t10.1.executor": "Run",
+    "Python.t10.2.executor": "Run",
+    "Python.t10.3.executor": "Run",
+    "Python.t10.4.executor": "Run",
+    "Python.t11.1.executor": "Run",
+    "Python.t11.2.executor": "Run",
+    "Python.t12.1.executor": "Run",
+    "Python.t12.2.executor": "Run",
+    "Python.t13.1.executor": "Run",
+    "Python.t2.2.executor": "Run",
+    "Python.t2.3.executor": "Run",
+    "Python.t2.4.executor": "Run",
+    "Python.t2.5.executor": "Run",
+    "Python.t2.6.executor": "Run",
+    "Python.t3.1.executor": "Run",
+    "Python.t3.2.executor": "Run",
+    "Python.t3.3.executor": "Run",
+    "Python.t3.4.executor": "Run",
+    "Python.t4.1.executor": "Run",
+    "Python.t4.2.executor": "Run",
+    "Python.t4.3.executor": "Run",
+    "Python.t4.4.executor": "Run",
+    "Python.t4.5.executor": "Run",
+    "Python.t4.6.executor": "Run",
+    "Python.t5.1.executor": "Run",
+    "Python.t5.2.executor": "Run",
+    "Python.t5.3.executor": "Run",
+    "Python.t5.4.executor": "Run",
+    "Python.t6.1.executor": "Run",
+    "Python.t6.2.executor": "Run",
+    "Python.t6.3.executor": "Run",
+    "Python.t6.4.executor": "Run",
+    "Python.t6.5.executor": "Run",
+    "Python.t6.6.executor": "Run",
+    "Python.t7.1.executor": "Run",
+    "Python.t7.2.executor": "Run",
+    "Python.t7.3.executor": "Run",
+    "Python.t8.1.executor": "Run",
+    "Python.t8.2.executor": "Run",
+    "Python.t8.3.executor": "Run",
+    "Python.t9.1.executor": "Run",
+    "Python.t9.2.executor": "Run",
+    "Python.t9.3.executor": "Run",
+    "Python.t9.4.executor": "Run",
+    "Python.tx.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\onion\PycharmProjects\kokeilut4\mod13" />
+      <recent name="C:\Users\onion\PycharmProjects\kokeilut4\mod12" />
+      <recent name="C:\Users\onion\PycharmProjects\kokeilut4\mod11" />
+      <recent name="C:\Users\onion\PycharmProjects\kokeilut4\mod10" />
+      <recent name="C:\Users\onion\PycharmProjects\kokeilut4\mod9" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -129,6 +142,9 @@
       <workItem from="1724587019214" duration="2384000" />
       <workItem from="1724595556530" duration="35389000" />
       <workItem from="1724869609594" duration="5759000" />
+      <workItem from="1725221314001" duration="366000" />
+      <workItem from="1725226176899" duration="3508000" />
+      <workItem from="1725262230368" duration="3698000" />
     </task>
     <task id="LOCAL-00001" summary="moi">
       <option name="closed" value="true" />
@@ -178,7 +194,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724721051853</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="moi">
+      <option name="closed" value="true" />
+      <created>1725221613631</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1725221613632</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,6 +217,7 @@
     <SUITE FILE_PATH="coverage/kokeilut4$t2_4.coverage" NAME="t2.4 Coverage Results" MODIFIED="1723996686659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kokeilut4$t9_4.coverage" NAME="t9.4 Coverage Results" MODIFIED="1724300126258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kokeilut4$t9_1.coverage" NAME="t9.1 Coverage Results" MODIFIED="1724262880308" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/kokeilut4$t8_3.coverage" NAME="t8.3 Coverage Results" MODIFIED="1725274407378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mod8" />
     <SUITE FILE_PATH="coverage/kokeilut4$t3_2.coverage" NAME="t3.2 Coverage Results" MODIFIED="1723999598430" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kokeilut4$t10_1.coverage" NAME="t10.1 Coverage Results" MODIFIED="1724312287806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kokeilut4$t10_4.coverage" NAME="t10.4 Coverage Results" MODIFIED="1724417468890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -203,7 +228,7 @@
     <SUITE FILE_PATH="coverage/kokeilut4$t4_6.coverage" NAME="t4.6 Coverage Results" MODIFIED="1724869714048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kokeilut4$t11_2.coverage" NAME="t11.2 Coverage Results" MODIFIED="1724615649156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kokeilut4$t7_3.coverage" NAME="t7.3 Coverage Results" MODIFIED="1724254034831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/kokeilut4$t8_1.coverage" NAME="t8.1 Coverage Results" MODIFIED="1724257155515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/kokeilut4$t8_1.coverage" NAME="t8.1 Coverage Results" MODIFIED="1725231381727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mod8" />
     <SUITE FILE_PATH="coverage/kokeilut4$t6_2.coverage" NAME="t6.2 Coverage Results" MODIFIED="1724189981394" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kokeilut4$t6_5.coverage" NAME="t6.5 Coverage Results" MODIFIED="1724191600100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kokeilut4$t2_2.coverage" NAME="t2.2 Coverage Results" MODIFIED="1723996077018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -211,7 +236,7 @@
     <SUITE FILE_PATH="coverage/kokeilut4$t2_5.coverage" NAME="t2.5 Coverage Results" MODIFIED="1723997776410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kokeilut4$t3_3.coverage" NAME="t3.3 Coverage Results" MODIFIED="1724000290174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kokeilut4$t9_2.coverage" NAME="t9.2 Coverage Results" MODIFIED="1724266991378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/kokeilut4$tx.coverage" NAME="tx Coverage Results" MODIFIED="1724920690451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/kokeilut4$tx.coverage" NAME="tx Coverage Results" MODIFIED="1725276114097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mod13" />
     <SUITE FILE_PATH="coverage/kokeilut4$t4_1.coverage" NAME="t4.1 Coverage Results" MODIFIED="1724068332796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kokeilut4$t10_2.coverage" NAME="t10.2 Coverage Results" MODIFIED="1724317241313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kokeilut4$t5_2.coverage" NAME="t5.2 Coverage Results" MODIFIED="1724097266110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -221,6 +246,7 @@
     <SUITE FILE_PATH="coverage/kokeilut4$t4_4.coverage" NAME="t4.4 Coverage Results" MODIFIED="1724070070252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kokeilut4$t10_3.coverage" NAME="t10.3 Coverage Results" MODIFIED="1724321420351" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kokeilut4$t11_1.coverage" NAME="t11.1 Coverage Results" MODIFIED="1724615985129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/kokeilut4$t8_2.coverage" NAME="t8.2 Coverage Results" MODIFIED="1725271465239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mod8" />
     <SUITE FILE_PATH="coverage/kokeilut4$t2_3.coverage" NAME="t2.3 Coverage Results" MODIFIED="1723996377633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kokeilut4$t3_1.coverage" NAME="t3.1 Coverage Results" MODIFIED="1723998924434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kokeilut4$t3_4.coverage" NAME="t3.4 Coverage Results" MODIFIED="1724048414093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
