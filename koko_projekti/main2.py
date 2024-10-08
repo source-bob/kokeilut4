@@ -779,10 +779,11 @@ class Peli:
 
         jonot = ['new game', 'continue last game', 'katso results']
         
+        his = 'Peli on vuoropohjainen strategiapeli, jossa on taloudellinen painotus. Kaksi pelaajaa kilpailevat lentokenttien ostamisesta ja hallinnoinnista. Peli perustuu SQL-tietokantaan ja on toteutettu käyttämällä Pygame-moduulia. Tavoitteena on säilyttää pääoma pidempään kuin vastustaja, ajamalla hänet konkurssiin lentokenttien ostamisen, tulojen keräämisen, sakkojen maksamisen ja muiden pelitapahtumien kautta.'
 
         while not next:
             screen.fill((0, 0, 0))
-
+            data.render_text_in_box(his, x - 200, y - 150, 500, font, screen, True)
             data.render_text_in_box('play?', x - 200, y + 150, max_w, font, screen, True)
             y_temp = y
             for i, jono in enumerate(jonot):
@@ -1027,5 +1028,4 @@ class Port:
     
     
 
-def start():
-    Peli()
+Peli()
