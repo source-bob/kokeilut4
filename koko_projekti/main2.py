@@ -37,6 +37,9 @@ class Peli:
 
     def loop(self):
         game = self.menu1()
+        if game == 3:
+            self.show_results()
+            self.menu1()
         if game == 2 and len(data.get_info('ports')) < 18:
             self.last_game()
             game -= 1
@@ -55,6 +58,7 @@ class Peli:
             self.round = data.get_round()
             for player in self.players:
                 player.set_params()
+
         
         
         self.make_ports()
@@ -62,6 +66,46 @@ class Peli:
             self.check_events()
             self.show()
             self.turns()
+    
+    def show_results(self):
+        res = data.get_results()
+        x = self.start_x
+        y = self.start_y
+        
+        font = pygame.font.SysFont('Arial', 14)
+        screen = self.näyttö
+        max_w = 400
+        next = False
+
+
+        jonot = [jono for jono in res]
+
+        screen.fill((0, 0, 0))
+        
+
+        while not next:
+            temp_y = y
+
+            
+            for i, jono in enumerate(jonot):
+                merkkijono = f'{jono['peli_id']}: {jono['pyörät']} {jono['voittaja']} {jono['pääoma']}'
+                data.render_text_in_box(merkkijono, x, temp_y, max_w, font, screen, True)
+                
+                temp_y += 20
+
+            
+
+            for event in pygame.event.get():
+                if event.type == pygame.KEYDOWN:
+                    
+                    if event.key == pygame.K_f:
+                        next = True
+                elif event.type == pygame.QUIT:
+                    exit()
+
+            pygame.display.update()
+        return
+        
 
     def show(self):
         self.piirrä_näyttö()

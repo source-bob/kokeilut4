@@ -272,3 +272,9 @@ def count_prope(name):
         capital += item['price']
     return capital
 
+def get_results():
+    kysely = 'SELECT * FROM airpoly_results'
+    res = universal_execute(kysely, True)
+    if len(res) == 0:
+        res = 'nothing to show'
+    return res
