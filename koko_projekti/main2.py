@@ -983,4 +983,5 @@ class Port:
     
     
 
-Peli()
+def start():
+    Peli()
