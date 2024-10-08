@@ -89,7 +89,7 @@ def create_board():
         1: 'start',
         4: 'bonus',
         7: 'bill',
-        10: 'taxi',
+        10: 'airbus',
         13: 'bonus2',
         15: 'rent',
         18: 'billx2',
@@ -139,7 +139,7 @@ def set_position(id):
 
 def add_money(id, amount):
     kysely = f'''UPDATE player
-    SET money = money +{amount}
+    SET money = money + {amount}
     WHERE NAME="player {id}"'''
     universal_execute(kysely)
 
@@ -194,63 +194,49 @@ def get_property(p_name):
     return ports
 
 def add_level(port_name, port_price):
-    sql = f'''UPDATE ports
-    SET lvl = lvl + 1, price = "{port_price}"
-    WHERE name="{port_name}"'''
-    cursor = yhteys.cursor(dictionary=True)
-    cursor.execute(sql)
+    kysely = f'UPDATE ports SET lvl = lvl + 1, price = {port_price} WHERE name = "{port_name}"'
+    universal_execute(kysely)
 
 def delete_owner(prop ,id):
-    cursor = yhteys.cursor(dictionary=True)
-    sql_delete = '''DELETE FROM property
-    WHERE id = %s'''
-    
-    cursor.execute(sql_delete, (id,))
-
-    sql_update = '''UPDATE ports
-    SET owner = NULL
-    WHERE id = %s'''
-    cursor.execute(sql_update, (id,))
+    kyselyt = [
+        f'DELETE FROM property WHERE id = {id}',
+        f'UPDATE ports SET owner = NULL WHERE id = {id}'
+        ]
+    for kysely in kyselyt:
+        universal_execute(kysely)
 
 def get_player_prope(p_name):
-    sql = f'''SELECT name, price
+    kysely = f'''SELECT name, price
     FROM ports
     WHERE id IN(
     SELECT id
     FROM property
     WHERE owner="{p_name}")'''
 
-    cursor = yhteys.cursor(dictionary=True)
-    cursor.execute(sql)
-    res = cursor.fetchall()
+    res = universal_execute(kysely, True)
     return res
 
 def save_results(round, player, prop_money, upd=False):
-    sql = '''INSERT INTO airpoly_results (pyörät, voittaja, pääoma) VALUES (%s, %s, %s);'''
-    cursor = yhteys.cursor(dictionary=True)
-    cursor.execute(sql, (round, player, prop_money))
+    kysely = '''INSERT INTO airpoly_results (pyörät, voittaja, pääoma) VALUES (%s, %s, %s);'''
+    universal_execute(kysely)
 
 def get_round():
-    sql = '''SELECT pyörät FROM airpoly_results
+    kysely = '''SELECT pyörät FROM airpoly_results
     ORDER BY peli_id DESC
     LIMIT 1'''
-    cursor = yhteys.cursor(dictionary=True)
-    cursor.execute(sql)
-    res = cursor.fetchall()
-    return res[0]['pyörät']
+    
+    res = universal_execute(kysely, True)[0]['pyörät']
+    return res
 
 
 
 def save_game(round, player_name=None, prop_money=None, exit=False):
-    sql = '''SELECT voittaja FROM airpoly_results
+    kysely = '''SELECT voittaja FROM airpoly_results
     ORDER BY peli_id DESC
     LIMIT 1'''
 
+    res = universal_execute(kysely, True)
     
-    cursor = yhteys.cursor(dictionary=True)
-    cursor.execute(sql)
-    res = cursor.fetchall()
-
     if exit:
         if len(res) == 0:
             save_results(round, 'not finished', 0)
@@ -274,11 +260,10 @@ def save_game(round, player_name=None, prop_money=None, exit=False):
 
     
 def update_last(round, player_name=None, prop_money=False):
-    sql = f'''UPDATE airpoly_results
+    kysely = f'''UPDATE airpoly_results
     SET pyörät = {round}, voittaja = "{player_name}", pääoma = {prop_money}
     WHERE peli_id = (SELECT MAX(peli_id) FROM airpoly_results)'''
-    cursor = yhteys.cursor(dictionary=True)
-    cursor.execute(sql)
+    universal_execute(kysely)
 
 def count_prope(name):
     data = get_player_prope(name)
