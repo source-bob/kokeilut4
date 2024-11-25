@@ -10,9 +10,7 @@ CREATE TABLE ports
 	ident			VARCHAR(40)	NULL,
 	owner			VARCHAR(40)	NULL,
 	lvl			    INT			NULL
-)
-
-CHARSET = LATIN1;
+) CHARSET = LATIN1;
 
 CREATE TABLE player
 (

@@ -291,7 +291,7 @@ figure {
     height: 42.5vh;
     max-height: 42.5vh;
     padding: 1%;
-    margin-left: auto;
+    margin-left: 2vh auto;
     margin-right: 3%;
     background-color: #35353F;
     border-radius: 1%;
@@ -303,7 +303,7 @@ figure {
     margin-bottom: 1%;
     font-size: 90%;
     max-width: 100%;
-    font-size: 1.8vh;
+    font-size: 1.65vh;
 }
 
 .form-h {
@@ -331,16 +331,19 @@ input[type="text"], input[type="email"], textarea, select {
 
 button[type="submit"] {
     width: 100%;
-    height: 5vh;
+    height: 2.5vh;
     padding: 0;
     background-color: #F7F6F4;
     color: #35353F;
     border: none;
     cursor: pointer;
-    font-size: 2vh;
+    font-size: 1.65vh;
     border-radius: 1%;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
 }
 
 button[type="submit"]:hover {
     background-color: #9E9D9C;
+    
 }
