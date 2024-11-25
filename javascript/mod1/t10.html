@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>T10</h1>
+    <div id="target"></div>
+    <script>
+        let dices = parseInt(prompt('number of dices:'));
+        let sumOfDices = parseInt(prompt('how much you need?:'));
+        if (dices < 1 || sumOfDices < dices || sumOfDices > dices * 6) {
+            document.querySelector('#target').innerHTML = 'wrong nums';
+        }
+
+        else {
+            let mainCounts = 0;
+            let amount = 10000;
+            for (let k = 0; k <= amount; k += 1) {
+                let counts = 0
+                for (let i = 1; i <= dices; i++) {
+                    let res = Math.floor(Math.random() * 6 + 1);
+                    counts += res;
+                }
+
+                if (counts === sumOfDices) {
+                    mainCounts++;
+                }
+            }
+            let pros = (mainCounts/amount) * 100;
+            document.querySelector('#target').innerHTML = `Probability to get sum ${sumOfDices} with ${dices} dice(s) is ${pros.toFixed(2)}%`;
+        }
+    </script>
+</body>
+</html>

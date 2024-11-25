@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>T5</h1>
+    <p id="target"></p>
+    <script>
+        let year = parseInt(prompt('year: '));
+        let result;
+
+        if ((year % 4 === 0 && year !== 100) || (year % 400 === 0)) {
+            res = 'leap year'
+        }
+
+        else {
+            res = 'year is not leap';
+        }
+
+        document.querySelector('#target').innerHTML = res;
+    </script>
+</body>
+</html>

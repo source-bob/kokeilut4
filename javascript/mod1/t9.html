@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>T9</h1>
+    <div id="target"></div>
+    <script>
+        let number = parseInt(prompt('give num'))
+        if (number <= 1) {
+            document.querySelector('#target').innerHTML = 'wrong num';
+        }
+        else {
+            let res = '';
+            for (let i = 2; i <= Math.sqrt(number); i++) {
+                if (number % i === 0) {
+                    res = 'NO, it is not prime';
+                }
+            }
+            if (res === '') {
+                res = 'YES, dis iz prime';
+            }
+            document.querySelector('#target').innerHTML = res;
+        }
+    </script>
+</body>
+</html>

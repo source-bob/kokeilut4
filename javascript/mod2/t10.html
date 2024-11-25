@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>T10</h1>
+    <div id="target"></div>
+    <script>
+        let numOfCand = parseInt(prompt('num of candidates:'));
+        let candidates = [];
+
+        for (let i = 0; i < numOfCand; i++) {
+            let nameOfCand = prompt('give name of candidate:');
+            let candi = {
+                name: nameOfCand,
+                votes: 0,
+            };
+
+            candidates.push(candi);
+        };
+
+        let numOfVoters = parseInt(prompt('how much voters?:'));
+        
+        for (i = 0; i < numOfVoters; i++) {
+            
+            let vote = prompt(`candidate name for your vote ${i + 1}:`);
+
+            for (candidate of candidates) {
+                if (candidate.name === vote) {
+                    candidate.votes += 1;
+                };
+            };
+        };
+
+        let listOfVotes = [];
+
+        for (candidate of candidates) {
+            listOfVotes.push(candidate.votes);
+        };
+
+        listOfVotes = listOfVotes.sort((a, b) => b - a);
+
+        let finalList = [];
+
+        for (vote of listOfVotes) {
+            for (candidate of candidates) {
+                if (finalList.includes(candidate)) {
+                    continue;
+                }
+                else if (candidate.votes === vote) {
+                    finalList.push(candidate);
+                };
+            };
+        };
+
+        console.log(`The winner is ${finalList[0].name} with ${finalList[0].votes} vote(s)`);
+        console.log('results:')
+        
+        for (candidate of finalList) {
+            console.log(`${candidate.name}: ${candidate.votes} vote(s)`);
+        };
+
+        
+    </script>
+</body>
+</html>
