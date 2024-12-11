@@ -18,9 +18,8 @@ const select = document.querySelector('#target');
 
 for (let i = 0; i < students.length; i++) {
   const option = document.createElement('option');
-  const text = document.createTextNode(students[i].name);
-
-  option.appendChild(text);
+  option.textContent = students[i].name;
   option.value = students[i].id;
+  
   select.appendChild(option);
 };

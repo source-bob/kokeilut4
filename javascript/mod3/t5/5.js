@@ -104,17 +104,15 @@ for (let i = 0; i < picArray.length; i++) {
   const figcaption = document.createElement('figcaption');
   const p = document.createElement('p');
 
-  const text = document.createTextNode(picArray[i].title);
-  const text2 = document.createTextNode(picArray[i].caption);
-  const text3 = document.createTextNode(picArray[i].description);
+  h.textContent = picArray[i].title;
+  figcaption.textContent = picArray[i].caption;
+  p.textContent = picArray[i].description;
 
   img.src = picArray[i].image.medium;
   img.alt = picArray[i].title;
-  article.classList.toggle('card');
+  article.className = 'card';
 
-  h.appendChild(text);
-  figcaption.appendChild(text2);
-  p.appendChild(text3);
+  
 
   article.appendChild(h);
   article.appendChild(figure);

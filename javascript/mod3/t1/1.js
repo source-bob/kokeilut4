@@ -1,5 +1,5 @@
 const div = document.querySelector('#target');
-div.classList.toggle('m-list');
+div.className = 'm-list';
 
 const html = `
 <li>First element</li>
