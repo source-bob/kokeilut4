@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Chuck Norris Joke Search</title>
 </head>
 <body>
-    <form action="https://api.chucknorris.io/jokes/random">
-        <input id="query" name="q" type="text">
-        <input type="submit" value="Search">
+    <h1>Chuck Norris Joke Search</h1>
+    <form id="jokeForm">
+        <input id="query" type="text" placeholder="Enter search term" />
+        <button type="submit">Search</button>
     </form>
-    <script src='t6.js'></script>
+    <div id="jokes-container"></div>
+    <script src="t6.js"></script>
 </body>
 </html>
