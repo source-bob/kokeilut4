@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>T5</h1>
+    <div id="target"></div>
+    <script>
+        let mainList = `<ul>`;
+            
+        function dice() {
+            let roll = Math.floor(Math.random() * 6 + 1);
+            return roll;
+        };
+
+        while (true) {
+            let roll = dice();
+            mainList += `<li>${roll}</li>`;
+            if (roll === 6) {
+                mainList += `</ul>`;
+                break;
+            }
+        };
+
+        document.querySelector('#target').innerHTML = mainList;
+
+    </script>
+</body>
+</html>
+
+
+
+

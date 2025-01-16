@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>T3</h1>
+    <p id="target"></p>
+    <script>
+        let num1 = parseInt(prompt('add num1: '));
+        let num2 = parseInt(prompt('add num2: '));
+        let num3 = parseInt(prompt('add num3: '));
+
+        sum = num1 + num2 + num3;
+        prod = num1 * num2 * num3;
+        avg = (sum / 3).toFixed(2);
+        res = `sum: ${sum}, prod: ${prod}, avg: ${avg}`;
+        document.querySelector('#target').innerHTML = res;
+    </script>
+</body>
+</html>

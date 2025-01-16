@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>T8</h1>
+    <div id="target"></div>
+    <script>
+        let listOf = ['Bob', 'Polja', 'Jack', 'Mindy'];
+
+        function concat(arr) {
+            
+            let string = '';
+            
+            for (item of listOf) {
+                string += item;
+            };
+
+            return string;
+        };
+
+        document.querySelector('#target').innerHTML = concat(listOf);
+    </script>
+</body>
+</html>

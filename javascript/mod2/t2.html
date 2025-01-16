@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>T2</h1>
+    <div id="target"></div>
+    <script>
+        let numOfBitches = parseInt(prompt('give num of bitches: '));
+        let allBitches = [];
+        
+        for (let i = 0; i < numOfBitches; i++) {
+            let bitch = prompt('give name of bitch: ');
+            allBitches.push(bitch);
+        };
+        
+        allBitches = allBitches.sort();
+        let lista = `<ol>`;
+        
+        for (let oneBitch of allBitches) {
+            lista += `<li>${oneBitch}</li>`;
+        };
+        
+        lista += `</ol>`;
+        document.querySelector('#target').innerHTML = lista;
+    </script>
+</body>
+</html>
