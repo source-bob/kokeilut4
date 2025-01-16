@@ -1,0 +1,30 @@
+{
+  "name": "test-serv",
+  "version": "1.0.0",
+  "description": "testi",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "test": "console.log('Hello')"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/source-bob/kokeilut4/test-Hyte"
+  },
+  "keywords": [
+    "projekti"
+  ],
+  "author": "Bob",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "nodemon": "^3.1.9",
+    "prettier": "3.4.2"
+  },
+  "dependencies": {
+    "@eslint/js": "^9.18.0",
+    "eslint": "^9.18.0",
+    "eslint-config-prettier": "^10.0.1",
+    "globals": "^15.14.0"
+  }
+}
